@@ -2,7 +2,7 @@
 
 ## Overview of the Analysis
 
-The purpose of this analysis is to evaluate credit risk by predicting whether a loan is high risk (likely to default) or healthy (low risk) using machine learning techniques. The dataset contains financial information related to lending, including features like loan amount, income level, and interest rates. Our goal is to predict the `loan_status` column, which indicates whether a loan is high risk (`1`) or healthy (`0`).
+The purpose of this analysis is to evaluate credit risk by predicting whether a loan is high risk (likely to default) or healthy (low risk) using machine learning techniques. Our goal is to predict the `loan_status` column, which indicates whether a loan is high risk (`1`) or healthy (`0`).
 
 The `loan_status` variable has the following distribution:
 - Healthy loans (`0`): **18,765** instances 
@@ -35,11 +35,11 @@ The model performs exceptionally well in predicting healthy loans, with precisio
 
 ## Summary
 
-The logistic regression model demonstrates strong overall performance with a high accuracy score of **99%**. It performs best when predicting healthy loans (`0`), with precision, recall, and F1-scores all being perfect or near-perfect. For high-risk loans (`1`), the model still performs well, particularly in terms of recall (94%), meaning it identifies most high-risk loans correctly.
+The logistic regression model performed very well, achieving an impressive 99% accuracy. It does a great job predicting healthy loans (0), with nearly perfect precision, recall, and F1 scores. When it comes to high-risk loans (1), the model still does well, especially with recall (94%), meaning it catches most high-risk loans correctly.
 
-However, due to the imbalanced nature of the dataset (many more healthy loans than high-risk ones), the model struggles slightly in predicting high-risk loans, as shown by the lower precision (84%) for this class. This imbalance means there are more false positives for high-risk loans than for healthy ones.
+This may be because the data has more healthy loans than high-risk ones, the model finds it a bit harder to accurately predict the high-risk loans. This is reflected in the lower precision (84%), meaning there are some false positives.
 
 ### Recommendation:
 
-The logistic regression model is recommended for use, particularly due to its high recall for high-risk loans (94%). This is crucial in financial risk assessment, as correctly identifying loans likely to default is often more important than minimizing false positives. However, additional strategies like handling class imbalance (e.g., using oversampling techniques or adjusting class weights) could further improve its performance in identifying high-risk loans.
+The logistic regression model is recommended for use, particularly due to its high recall for high-risk loans (94%). This is crucial in financial risk assessment, as correctly identifying loans likely to default is often more important than minimizing false positives. 
 
