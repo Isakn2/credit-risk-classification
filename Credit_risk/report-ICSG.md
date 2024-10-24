@@ -1,15 +1,15 @@
 # Module 12 Report Template
 
-## Overview of the Analysis
+## Overview
 
-The purpose of this analysis is to evaluate credit risk by predicting whether a loan is high risk (likely to default) or healthy (low risk) using machine learning techniques. Our goal is to predict the `loan_status` column, which indicates whether a loan is high risk (`1`) or healthy (`0`).
+The purpose of this analysis is to evaluate credit risk by predicting whether a loan is high risk (likely to default) or healthy (low risk) using Logistic Regression. Our goal is to predict the `loan_status` column, which indicates whether a loan is high risk (`1`) or healthy (`0`).
 
 The `loan_status` variable has the following distribution:
 - Healthy loans (`0`): **18,765** instances 
 - High-risk loans (`1`): **619** instances
 *Based on the confusion matrix*
 
-This shows that the data has more healthy loans than high-risk loans. 
+We can say that the data has more healthy loans than high-risk loans. 
 
 The machine learning process included the following steps:
 - **Data Preprocessing**: The dataset was split into features (X) and labels (y). The features include all columns except `loan_status`, which is used as the label.
